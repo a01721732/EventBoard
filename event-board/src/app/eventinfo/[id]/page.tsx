@@ -1,37 +1,11 @@
-/*
-import { supabase } from "../../../lib/supabase";
+import ParticipanteList from "../../../components/ParticipanteList";
 
-async function fetchData() {
-  const { data, error } = await supabase.from('Evento').select('*');
-  if (error) {
-    throw new Error('Error fetching data');
-  }
-
-  return data || [];  // Return empty array if data is undefined or null
-};
-
-export default async function EventInfo({
-  params,
-}: {
-  params: Promise<{ id: string }>
-}) {
-    const { id } = await params
-    const { events } = await fetchData;
-    return (
-      <div>{events}</div>
-    )
-}
-    */
-
-
-import EventoList from "../../../components/EventoList"; // Adjust the path if needed
-
-const EventosPage = () => {
+const EventInfoPage = () => {
   return (
-    <div>
-      <EventoList />
+    <div className="bg-[#444444] pt-30 min-h-screen">
+      <ParticipanteList/>
     </div>
   );
 };
 
-export default EventosPage;
+export default EventInfoPage;

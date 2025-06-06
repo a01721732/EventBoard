@@ -20,6 +20,8 @@ export default function Home() {
           Your browser does not support the video tag.
         </video>
       </div>
+      
+      <h2 className="mt-40 text-4xl z-11 text-center text-white mt-10">Construido con:</h2>
       <CarouselWithProgress/>
     </main>
   );

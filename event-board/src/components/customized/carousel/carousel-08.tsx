@@ -44,7 +44,7 @@ export default function CarouselWithProgress() {
           {Array.from(images).map((_, index) => (
             <CarouselItem key={index}>
               <Card>
-                <CardContent className="flex aspect-video items-center justify-center p-6">
+                <CardContent className="flex aspect-video items-center justify-center p-6 h-[100%]">
                   <span className="text-4xl font-semibold"><img src={images[index]}></img></span>
                 </CardContent>
               </Card>
